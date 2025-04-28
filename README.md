@@ -43,12 +43,24 @@
 
 ## Запуск
 
-1. (dev) Установить зависимости, развернуть окружение.
-2. Ввести ключи доступа к OpenAI и Telegram.
-3. Запустить backend для автогенерации или интерактива.
+### Backend (Flask mini-API для Telegram-бота)
+
+1. Установить зависимости:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Запустить сервер (локально):
+   ```
+   python api.py
+   ```
+   По умолчанию доступен на http://localhost:8080
+
+**Эндпоинты:**
+* `/bot/status` — JSON (статус бота, время, версия)
+* `/bot/game` — мини-игра/тестовая фраза
+* `/bot/webhook` — приём POST из Telegram
 
 ---
 
 **Автор идеи**: Drus  
 **Группа**: [Visaginas360](https://t.me/visaginas360)
-
