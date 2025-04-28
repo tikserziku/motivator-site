@@ -1,0 +1,167 @@
+<!-- ... остальной HTML ... -->
+
+<footer style="margin-top:2em;text-align:center;font-size:0.95em">
+  <a href="DEPLOY_GUIDE.md" target="_blank">
+    Как выложить сайт на сервер — см. инструкцию
+  </a>
+</footer>
+
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Мотиватор дня</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HERO SECTION -->
+  <div style="max-width:600px;margin:2em auto 2.5em auto;padding:2.5em 1em 2em 1em;background:linear-gradient(110deg,#f6fff2 0%,#e3f0ff 100%);border-radius:28px;box-shadow:0 8px 36px rgba(44,72,96,.12);text-align:center;position:relative;">
+    <h2 style="font-size:2.5rem;letter-spacing:-0.03em;margin:0 0 1.2em 0;color:#3166b8;font-weight:800;">Ежедневный заряд</h2>
+    <button id="motivate-btn" style="background:linear-gradient(90deg,#5ee687 0%,#58cfff 100%);color:#184151;font-size:1.3rem;padding:0.75em 2.6em;border:none;border-radius:2em;font-weight:700;box-shadow:0 2px 12px rgba(58,128,188,.14);cursor:pointer;transition:transform 0.1s;">Получить мотивацию</button>
+    <div id="motivation-phrase" style="margin-top:1.8em;font-size:1.5em;color:#237122;min-height:48px;font-weight:600;">
+      Жизнь меняется от одного решения, но только если ты его принимаешь!
+    </div>
+  </div>
+  <script>
+    const phrases = [
+      "Жизнь меняется от одного решения, но только если ты его принимаешь!",
+      "Сегодня отличный день, чтобы сделать что-то важное для себя.",
+      "Начни с главного — и пусть мелочи сами займут свои места.",
+      "Ты не обязан быть всегда на 100% — но ты можешь быть честным с собой.",
+      "Самое трудное — начать. Дальше станет легче и ярче!",
+      "Ты гораздо ближе к своей цели, чем тебе кажется.",
+      "Сделай сегодня шаг — и уже завтра ты будешь впереди большинства.",
+      "Не сравнивай себя с другими. Ты — единственный в своём роде путь.",
+      "Каждая маленькая победа — фундамент большого успеха!"
+    ];
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('motivate-btn').onclick = function() {
+        let curr = document.getElementById('motivation-phrase').textContent.trim();
+        let filtered = phrases.filter(p => p !== curr);
+        let phrase = filtered.length > 0
+          ? filtered[Math.floor(Math.random() * filtered.length)]
+          : phrases[Math.floor(Math.random() * phrases.length)];
+        document.getElementById('motivation-phrase').textContent = phrase;
+      };
+    });
+  </script>
+  <header><h1>Твои ежедневные триггеры роста</h1></header>
+  <main>
+    <section><img src="img/A_flat-style_digital_illustration_depicts_a_comput.png" alt=""><p>Я решаю одну реальную проблему в день.</p></section>
+
+    <section style="background: #f8f9fa;padding:1.5em 1em;margin-bottom:1.5em;border-radius:10px;">
+      <h3>Как сочинить личную утреннюю фразу</h3>
+
+      <h4>1. Определи ядро</h4>
+      <ul>
+        <li>Запиши <b>3-5 ценностей</b>: польза, свобода, любознательность.</li>
+        <li>Отметь <b>сильные черты</b>, где ИИ слаб: эмпатия, стратегическое видение, юмор.</li>
+        <li>Выбери одну <b>главную цель на год</b>.</li>
+      </ul>
+
+      <h4>2. Собери короткую формулу</h4>
+      <blockquote style="background:#eee;padding:0.5em 1em;border-left:4px solid #4285f4;">
+        Я + действие + получатель + ощутимый результат
+      </blockquote>
+      <p><b>Пример:</b><br>
+      «Я создаю понятные сервисы, чтобы люди экономили время».</p>
+
+      <h4>3. Проверь три критерия</h4>
+      <ul>
+        <li><b>10-секундный тест</b> — произнеси вслух, услышал энергию?</li>
+        <li><b>Фокус</b> — фраза охватывает только одну цель.</li>
+        <li><b>Измеримость</b> — можно увидеть, сделал ли ты шаг к ней сегодня.</li>
+      </ul>
+
+      <h4>4. Итерация</h4>
+      <p>Правь слова до тех пор, пока фраза не звучит легко.</p>
+      <ul>
+        <li>Запиши на бумаге.</li>
+        <li>Повесь там, где ухом и глазом ловишь сразу после подъёма.</li>
+      </ul>
+
+      <h4>5. Пример финального варианта</h4>
+      <blockquote style="background:#e1f5fe;padding:0.5em 1em;border-left:4px solid #00bcd4;">
+        «Я решаю одну реальную проблему в день и делюсь решением с миром».
+      </blockquote>
+      <p>Коротко, конкретно, поднимает с кровати.</p>
+
+      <h4>6. Где ИИ не вытеснит твою ценность</h4>
+      <p>
+        Исследования 2025 года показывают рост спроса на человеко-центричные навыки:<br>
+        лидерство, гибкость, социальное влияние.<br>
+        <i>Источник: World Economic Forum</i>
+      </p>
+      <p>
+        При этом лишь ≈34% задач прогнозно станут автоматизированы к 2030 году.<br>
+        <i>Источник: World Economic Forum</i>
+      </p>
+      <p><b>Наибольший риск</b> – рутинная обработка данных. Больше всего защищены роли, где нужны:</p>
+      <ul>
+        <li>доверие и взаимодействие лицом к лицу;</li>
+        <li>творческий синтез разнородного опыта;</li>
+        <li>глубокая отраслёвая экспертиза и узкие данные;</li>
+        <li>ответственность за конечный результат. <i>(Brookings, Paybump)</i></li>
+      </ul>
+
+      <h4>7. «Комбайн» дохода: каркас из четырёх модулей</h4>
+      <div style="overflow-x:auto;">
+      <table border="1" cellpadding="5" style="border-collapse:collapse;width:100%;background:#fff;">
+        <thead>
+          <tr style="background:#ececec;">
+            <th>Модуль</th>
+            <th>Суть</th>
+            <th>Почему стойко к ИИ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ниша-экспертиза</td>
+            <td>выбери микро-рынок, где владеешь контекстом (например, финансы для ИТ-фрилансеров)</td>
+            <td>ИИ не знает негласных правил и боли клиентов</td>
+          </tr>
+          <tr>
+            <td>Продукт + сервис</td>
+            <td>автоматизированное ядро + человеческая надстройка (бот + консультация)</td>
+            <td>Алгоритм даёт скорость, ты — доверие</td>
+          </tr>
+          <tr>
+            <td>Аудитория</td>
+            <td>блог, подкаст, закрытый чат, очные воркшопы</td>
+            <td>Сообщество строит лояльность, ИИ не заменит связь</td>
+          </tr>
+          <tr>
+            <td>Портфель каналов монетизации</td>
+            <td>подписка, единичные продажи, партнёрки, лицензии</td>
+            <td>Разные потоки держат доход, когда один канал падает</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h4>8. Пошаговый план запуска</h4>
+      <ol>
+        <li>Разговоры — найди 10 людей в нише, обсуди их боли.</li>
+        <li>Точная формулировка проблемы — одна проблема = один заголовок лендинга.</li>
+        <li>Мини-решение за неделю — скрипт, Notion-шаблон, чек-лист.</li>
+        <li>Публичный дневник — ежедневно выкладывай маленькие выводы.</li>
+        <li>Платная бета — предложи первым 5 клиентам цену «кофе в день».</li>
+        <li>Цикл улучшений — собирай обратную связь, дорабатывай.</li>
+        <li>Расширение — добавь обучение или личный коучинг вокруг основного продукта.</li>
+      </ol>
+
+      <h4>9. Утренний check-лист в одну строку</h4>
+      <blockquote style="background:#e8ffc9;padding:0.5em 1em;border-left:4px solid #689f38;">
+        «Я улучшаю жизнь клиентов и фиксирую результат в коде, тексте и цифрах».
+      </blockquote>
+      <p>Что из этого отзывается тебе сильнее: сам шаблон фразы или схема «комбайна»?<br>
+      Готов ли ты протестировать фразу завтра утром и дать обратную связь?</p>
+    </section>
+    <section><img src="img/A_flat-design_vector_illustration_of_a_shield-shap.png" alt=""><p>Навыки, которые ИИ не заменит.</p></section>
+    <section><img src="img/A_flat-style_digital_infographic_features_four_hor.png" alt=""><p>Четыре модуля устойчивого дохода.</p></section>
+    <section><img src="img/A_flat_design_digital_timeline_infographic_illustr.png" alt=""><p>Семь шагов от идеи до расширения.</p></section>
+    <section><img src="img/A_flat-design_digital_illustration_on_a_white_back.png" alt=""><p>Работай в полную силу.</p></section>
+  </main>
+  <footer><small>© 2025 Drus</small></footer>
+</body>
+</html>

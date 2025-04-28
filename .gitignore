@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# NodeJS (если понадобится)
+node_modules/
+
+# macOS, Windows
+.DS_Store
+Thumbs.db
+
+# Logs, cache, temp
+*.log
+*.tmp
+.cache/
+.nyc_output/
+coverage/
+
+# System files
+*.swp
+*.swo
+
+# Cloud/IDE
+.idea/
+.vscode/
+*.code-workspace
+
